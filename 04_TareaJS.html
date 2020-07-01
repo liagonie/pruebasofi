@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Tarea 4</title>
+</head>
+<body>
+    <header>
+    	<script>
+            //Se declara la variable y se inicializa en 0
+            resultado = 0;
+
+            //parseInt- valor numerico, y Ingresar el 1er nuemero
+            numero = parseInt(prompt("Ingrese un número positivo y Terminará cuando se teclea un número negativo o cero"));
+            
+            //do-while como proceso 
+            do{
+                resultado=resultado+numero;
+                
+                //Se ingresa el siguiente numero y la condición determina si utiliza el bucle 
+                numero = parseInt(prompt("Ingrese un número positivo y Terminará cuando se teclea un número negativo o cero"));
+            }
+            //while valida la condicón
+            while(numero > 0);
+            
+            //Imprimir el resultado
+            document.write("El resultado de la suma es: " + resultado);
+        </script>
+    </header>
+</body>
+</html>
